@@ -1,38 +1,47 @@
-.App {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h1, h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  text-transform: capitalize;
+  letter-spacing: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-spacing: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+#form > input {
+  width: 360px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#form > button {
+  width: 112px;
+  height: 56px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#form > .MuiOutlinedInput-root {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px;
 }
